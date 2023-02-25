@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style type="text/css">
+        fieldset {
+            width: 40%;
+            padding: 20px;
+            margin: 40px;
+        }
+        
+        .ph {
+            height: 32px;
+        }
+        
+        table {
+            width: 100%;
+        }
+        
+        td {
+            border-right: 1px solid #C1DAD7;
+            border-bottom: 1px solid #C1DAD7;
+            background: #eee;
+            padding: 6px 6px 6px 12px;
+            color: #6D929B;
+        }
+    </style>
+</head>
+
+<body>
+
+    <fieldset>
+        <legend style="text-align: center">
+            Customer Registration
+        </legend>
+
+        <form id="frm1" action="#" method="get" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+
+            <table>
+                <tr>
+                    <td>First Name</td>
+                    <td>
+                        <input id="Text1" type="text" required title="Error" /></td>
+                </tr>
+                <tr>
+                    <td>Last Name</td>
+                    <td>
+                        <input id="Text2" type="text" required autofocus/></td>
+                </tr>
+                <tr>
+                    <td>User Name</td>
+                    <td>
+                        <input id="Textu" type="text" required/></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td>
+                        <input id="Textp" type="password" required/></td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td>
+                        <input id="Text3" type="text" /></td>
+                </tr>
+                <tr>
+                    <td>BirthDate</td>
+                    <td>
+                        <input id="Text4" type="date" /></td>
+                </tr>
+                <tr>
+                    <td class="ph">Phone</td>
+                    <td class="ph">
+                        <input id="Text5" type="tel" pattern="[0-9]{7}" title="only 7 numbers are allowed" /></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>
+                        <input id="Text6" type="email" placeholder="yourname@example.com" /></td>
+                </tr>
+                <tr>
+                    <td>Website</td>
+                    <td>
+                        <input id="Text7" type="url" placeholder="https://www.example.com" /></td>
+                </tr>
+                <tr>
+                    <td>Credit Limit</td>
+                    <td>
+                        <input id="Text8" type="number" min="50" max="1000" /></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <input id="Radio1" type="radio" /> Male &nbsp;
+                        <input id="Radio2" type="radio" /> Female</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input id="Checkbox1" type="checkbox" checked /> Subscribe</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input id="Submit1" type="submit" /></td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td><input id="a" type="number"><br>+</td>
+                </tr>
+                <tr>
+                    <td><input id="b" type="number"><br>=<br><output name="x" for="a b"></output></td>
+                </tr>
+
+            </table>
+
+        </form>
+    </fieldset>
+
+</body>
+</html>
+

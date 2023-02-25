@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>HTML5 First Web page</title>
+    <style>
+        /*Remove the borders from all table elements*/
+        table,
+        th,
+        td {
+            border-style: none;
+            /*border-width: 5px;*/
+
+        }
+
+        /*Apply a background color to the table heading*/
+        thead {
+            background-color: #a7a37e;
+        }
+
+        /*Apply a background color to every other row in the table body*/
+        tbody tr:nth-child(even) {
+            background-color: #efecca;
+        }
+
+        /*Apply a background color to every other row in the table footer*/
+        tfoot tr:nth-child(odd) {
+            background-color: #efecca;
+        }
+
+        Read more: https: //html.com/tables/styling/#ixzz5SqGvjlne
+    </style>
+</head>
+
+<body>
+    <!-- page content -->
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Favorite Color</th>
+        </tr>
+        <tr>
+            <td>Bob</td>
+            <td>Yellow</td>
+        </tr>
+        <tr>
+            <td>Michelle</td>
+            <td>Purple</td>
+        </tr>
+    </table>
+
+
+    <br>
+    <table>
+        <caption>Most Popular Content Management Systems</caption>
+        <thead>
+            <tr>
+                <th>CMS</th>
+                <th>Usage *</th>
+                <th>Change Since Jan 1</th>
+                <th>Market Share *</th>
+                <th>Change Since Jan 1</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>WordPress</td>
+                <td>25.8%</td>
+                <td>+0.2%</td>
+                <td>59.1%</td>
+                <td>+0.3%</td>
+            </tr>
+            <tr>
+                <td>Joomla</td>
+                <td>2.8%</td>
+                <td>No Change</td>
+                <td>6.4%</td>
+                <td rowspan="4">No Change</td>
+            </tr>
+            <tr>
+                <td>Drupal</td>
+                <td>2.2%</td>
+                <td>+0.1%</td>
+                <td>4.9%</td>
+            </tr>
+            <tr>
+                <td>Magento</td>
+                <td>1.3%</td>
+                <td>+0.1%</td>
+                <td>2.9%</td>
+            </tr>
+            <tr>
+                <td>Blogger</td>
+                <td>1.2%</td>
+                <td>No Change</td>
+                <td>2.7%</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td>Totals</td>
+                <td>33.3%</td>
+                <td></td>
+                <td>76%</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="5">* <strong>Usage</strong> is percentage of surveyed websites that use the associated CMS. <strong>Market Share</strong> is the percentage of surveyed websites powered by a CMS that use the associated CMS. For example, 25.8% of all surveyed websites use WordPress, and WordPress commands 59.1% market share of the total CMS market.</td>
+            </tr>
+            <tr>
+                <td colspan="5">The data in this table is provided courtesy of <a href="http://w3techs.com" target="_blank">W3Techs</a> and was captured in February 2016. To learn more about this topic visit the <a href="http://w3techs.com/technologies/overview/content_management/all" target="_blank">overview of content management systems</a> from W3Techs.</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>
